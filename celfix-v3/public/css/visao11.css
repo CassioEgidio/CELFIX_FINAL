@@ -1,0 +1,836 @@
+.main{
+    display: flex;
+}
+.esquerda{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    transition: 0.5s;
+}
+.slider{
+    margin: 0 auto;
+    width: 600px;
+    height: 700px;
+    overflow: hidden;
+    margin-top: 155px;
+}
+.slides{
+    width: 400%;
+    height: 700px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    transition: 1s;
+}
+.slide img{
+    width: 600px;
+    border-radius: 20px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 600px; /*600*/
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 6px solid #000;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+.manual-btn:hover{
+    background-color: #000;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+/*imagens dentro do radio*/
+.manual-navigation label {
+    display: block;
+    border: 4px solid #666;   
+    width: 80px;
+    height: 80px;
+    float: left;
+    }
+.slides input[type="radio"]:checked+label {
+    border-color: #ccf;
+}
+.manual-navigation img {
+    height: 60px;
+    width: 60px;
+}
+label.manual-btn:hover {
+    background-color: #fff;
+}
+.lado{
+    width: 50%;
+    margin-left: 50%;
+}
+.direita{
+    display: flex;
+    justify-content: center;
+    margin-top: -690px;
+    transition: 0.5s;
+}
+.informaçoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding-left: 25px;
+    width: 55rem;
+    height: 10.6875rem;
+    background-color: #f4f4f4;
+    border-radius: 0.9375rem;
+}
+.avaliacoes{
+    display: flex;
+    align-items: center;
+}
+.infor{
+    color: #000;
+    font-family: Alata;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.infor2{
+    color: #8E918F;
+    font-family: Alata;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.share{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #30107A;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin-left: 700px;
+    transition: 0.5s;
+}
+.share:hover{
+    background: #A739C0;
+}
+.importante{
+    display: flex;
+    margin-top: 30px;
+}
+.opcoes_pagamento1{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   padding-left: 50px;
+   width: 50%;
+   gap: 20px;
+}
+.opcoes_pagamento2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+ }
+ .inforpaga1{
+    color: rgba(0, 0, 0, 0.40);
+    text-align: center;
+    font-family: Alata;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: line-through;
+}
+
+.inforpaga2{
+    color: #000;
+    font-family: Alata;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.inforpaga3{
+    color: #A739C0;
+    text-align: center;
+    font-family: Alata;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.inforpaga4{
+    color: #8E918F;
+    font-family: Alata;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.juntos{
+    display: flex;
+    gap: 10px;
+}
+.fpaga{
+    color: rgba(167, 57, 192, 0.70);
+    text-align: center;
+    font-family: Alata;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.calcfret{
+    color: rgba(167, 57, 192, 0.70);
+    text-align: center;
+    font-family: Alata;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.compracelfix{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+    gap: 5px; 
+}
+.cel{
+    color: #000;
+    text-align: center;
+    font-family: Alata;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.fix{
+    color: #A739C0;
+    font-family: Alata;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 70px;
+    transition: 0.5s;
+}
+.b1{
+    cursor: pointer;
+    width: 22.125rem;
+    height: 4.8125rem;
+    border-radius: 2.1875rem;  
+    background: #30107A;
+    border: none; 
+    transition: 0.5s;
+}
+.b1:hover{
+    background: #A739C0;
+}
+.b2{
+    color: #FFF;
+    text-align: center;
+    font-family: Alata;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*parte do frete*/
+#freteForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    flex-direction: column;
+    
+    align-items: flex-start;
+    width: 372px;
+    height: 360.66px;
+    max-width: 80%;
+    border-radius: 0.9375rem;
+}
+
+#freteBackground {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+#resultado{
+    color: black;
+    font-family: Alata;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.tifrete{
+    color: black;
+    font-family: Alata;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -20px;
+}
+.fecharfrete{
+    width: 25px;
+    margin-left: 305px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.cepfrete{
+    color: black;
+    font-family: Alata;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 35px;
+}
+.okfrete{
+    color: #FFF;
+}
+.campofrete{
+    width: 257px;
+    height: 44px;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+.campofrete::placeholder{
+    font-size: 16px;
+}
+form{
+    width: 100%;
+}
+.botaofrete{
+    width: 50px;
+    height: 50px;
+    border-radius: 0.5rem;
+    background: #30107A;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.botaofrete:hover{
+    background: #A739C0;
+}
+.Enderecosfre{
+    color: black;
+    font-family: Alata;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 40px;
+}
+.loginfrete{
+    border-radius: 2.1875rem;
+    border: none;
+    background: #30107A;
+    width: 100%;
+    height: 3.375rem;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 10px; /*ver*/
+}
+.loginfrete:hover{
+    background: #A739C0;
+}
+.lfrete{
+    color: #FFF;
+    text-align: center;
+    font-family: alata;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (max-width: 450px){
+    #freteForm {
+        height: 480px;
+    }
+    .fecharfrete{
+        margin-left: 280px;
+    }
+    .campofrete{
+        width: 100%;
+    }
+    .botaofrete{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .tifrete{
+        font-size: 1.2rem;
+    }
+    .cepfrete{
+        font-size: 0.9rem;
+    }
+    .Enderecosfre{
+        font-size: 0.9rem;
+    }
+    #resultado{
+        margin-top: 10px;
+    }
+    .campofrete::placeholder{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 425px){
+    .fecharfrete{
+        margin-left: 220px;
+    }
+}
+/*acaba aqui o css do frete*/
+
+@media screen and (max-width: 1585px){
+    .importante{
+        flex-direction: column;
+    }
+    .opcoes_pagamento1{
+        align-items: center;
+        padding-left: 0px;
+        width: 100%;
+     }
+     .opcoes_pagamento2{
+        margin-top: 10px;
+        width: 100%;
+     }
+     .share{
+        margin-left: 600px;
+    }
+}
+@media screen and (max-width: 1563px){
+    .botao{
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 1360px){    /*div que as informacoes vão para baixo*/
+    .esquerda{
+        width: 100%;
+    }
+    .lado{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 710px;
+    }
+    .informaçoes{
+        width: 100%;
+    }
+    .slider{
+        width: 400px;
+        height: 500px;
+    }
+    .slides{
+        height: 500px;
+    }
+    .slide img{
+        width: 400px;
+    }
+    .manual-navigation{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 690px){
+    .share{
+        margin-left: 400px;
+    }
+    .infor{
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .infor2{
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .inforpaga1{
+        font-size: 1rem;
+    }
+    .inforpaga2{
+        font-size: 1.3rem;
+    }
+    .inforpaga3{
+        font-size: 1.3rem;
+    }
+    .compracelfix img{
+        scale: 0.6;
+
+    }
+    .cel{
+        font-size: 1.3rem;
+    }
+    .fix{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 490px){
+    .manual-navigation label {   /*aqui mexer no tamenho do quadrado*/
+        display: block;
+        border: 4px solid #666;
+        width: 45px;
+        height: 45px;
+        float: left;
+        }
+    .slides input[type="radio"]:checked+label {
+        border-color: #ccf;
+    }
+    .manual-navigation img {
+        height: 25px;
+        width: 25px;
+    }
+    .lado{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 680px;
+    }
+    .b1{
+        width: 20rem;
+        height: 4rem;
+    }
+    .b2{
+        font-size: 1.2rem;
+    }
+    .share{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #30107A;
+        width: 35px;
+        height: 35px;
+        border-radius: 40px;
+        margin-left: 350px;
+        transition: 0.5s;
+    }
+    .share img{
+        scale: 0.6;
+    }
+}
+@media screen and (max-width: 420px){
+    .slider{
+        width: 300px;
+        height: 400px;
+    }
+    .slides{
+        height: 400px;
+    }
+    .slide img{
+        width: 300px;
+    }
+    .manual-navigation{
+        width: 300px;
+    }
+    .compracelfix{
+        flex-direction: column;
+        gap: 0;
+    }
+    .share{
+        margin-left: 330px;
+        margin-top: -990px;
+    }
+}
+@media screen and (max-width: 400px){
+    .share{
+        margin-left: 310px;
+    }
+}
+@media screen and (max-width: 380px){
+    .share{
+        margin-left: 265px;
+    }
+}
+
+/*aqui começa o css das avaliacoes*/
+
+.avaliac{
+    width: 100%;
+    margin-top: 150px;
+ }
+ .estrelasgrandes{
+    display: flex;
+    align-items: center;
+}
+.numeestre span{
+    color: #000;
+    font-family: Alata;
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem; /* 42.857% */
+    letter-spacing: 0.4375rem;
+}
+.text_ava{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.qava{
+    display: flex;
+    align-items: center;
+    width: 87.125rem;
+    height: 6.875rem;
+    border-radius: 3.125rem;
+    background: #F4F4F4;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.nomecliente span{
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Alata;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem; /* 93.75% */
+    letter-spacing: 0.2rem;
+}
+.comentario p{
+    color: #000;
+    font-family: Alata;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+}
+.fotocliente img{
+    margin-left: 10px;
+}
+.alignju{
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+    margin-left: 15px;
+    gap: 8px;
+}
+.comentario{
+    justify-content: left;  
+    margin-top: 30px;
+}
+.c1{
+    margin-left: -330px;
+}
+.c2{
+    margin-left: -345px;
+}
+.c3{
+    margin-left: -325px;
+}
+.c4{
+    margin-left: -310px;
+}
+/*botao ver mais*/
+.botaomais button{
+    cursor: pointer;
+    width: 14.5625rem;
+    height: 3.375rem;
+    border-radius: 6.25rem;
+    border: none;
+    background: #30107A;
+    transition: 0.5s;
+}
+.botaomais button:hover{
+    background: #A739C0;
+}
+.botaomais span{
+    color: #FFF;
+    text-align: center;
+    font-family: Jost;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*aqui começa o carrossel de avaliacoes*/
+.carrosseldeimagens{
+    display: flex;
+    padding-left: 700px;
+    width: 100%;
+    margin-top: -200px;
+    margin-bottom: 50px;
+}
+.container {
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .gallery-wrapper {
+    overflow-x: auto;
+  }
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    color: #fff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+  }
+  .arrow-left:hover,
+  .arrow-right:hover {
+    opacity: 1;
+  }
+  .arrow-right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+  }
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+  }
+  .item {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+  }
+  .current-item {
+    opacity: 1;
+  }
+  .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .gallery-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+/*acaba*/
+
+@media screen and (max-width: 1410px){
+    .qava{  
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1350px){
+    .estrelasgrandes{
+        justify-content: center;
+    }
+    .carrosseldeimagens{
+        padding-left: 0;
+        margin-top: 25px;
+    }
+    .numeestre span{
+        font-size: 3rem;
+    }
+    .estrelasgrandes img{
+        width: 100px;
+        height: 100px;
+    }
+    .comentario p{
+        font-size: 1.2rem;
+    }
+    .nomecliente span{
+        font-size: 1.4rem;
+    }
+    .esava img{
+        width: 93px;
+        height: 21px;
+    }
+    .c1{
+        margin-left: -205px;
+    }
+    .c2{
+        margin-left: -220px;
+    }
+    .c3{
+        margin-left: -200px;
+    }
+    .c4{
+        margin-left: -185px;
+    }
+    .avaliac{
+        margin-top: 80px;
+     }
+}
+@media screen and (max-width: 990px){
+    .comentario p{
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+    .qava{
+        height: 10rem;
+    }
+    .alignju{
+        margin-top: -90px;
+    }
+}
+@media screen and (max-width: 650px){
+    .container {
+        max-width: 300px;
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+      }
+      .arrow-left,
+      .arrow-right {
+        display: none;
+      }
+}

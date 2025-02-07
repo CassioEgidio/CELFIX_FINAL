@@ -1,0 +1,573 @@
+.slider{
+    margin: 0 auto;
+    width: 1600px;
+    height: 420px;
+    overflow: hidden;
+    margin-top: 155px;
+}
+.slides{
+    width: 400%;
+    height: 420px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    transition: 1s;
+}
+.slide img{
+    width: 1600px;
+    border-radius: 20px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 1600px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #ffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+.manual-btn:hover{
+    background-color: #ffff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border: 2px solid #89938F;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 1600px;
+    margin-top: 380px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #ffff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #ffff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #ffff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #ffff;
+}
+@media screen and (max-width: 1628px) {
+    .slider{
+        margin: 0 auto;
+        width: 800px;
+        height: 320px;
+        overflow: hidden;
+        margin-top: 155px;
+    }
+    .slides{
+        width: 400%;
+        height: 320px;
+        display: flex;
+    }
+    .slides input{
+        display: none;
+    }
+    .slide img{
+        width: 800px;
+        border-radius: 15px;
+    }
+    .manual-navigation{
+        position: absolute;
+        width: 800px;
+        margin-top: -135px;
+        display: flex;
+        justify-content: center;
+    }
+    .navigation-auto{
+        position: absolute;
+        width: 800px;
+        margin-top: 185px;
+        display: flex;
+        justify-content: center;
+    }
+    .btnloja{
+        transform: scale(0.7);
+        margin-top: -120px;
+    }
+    .btnreparo{
+        transform: scale(0.7);
+        margin-top: -120px;
+    }
+}
+@media screen and (max-width: 1000px){
+    body{
+        overflow-x: hidden;
+    }
+    .slider{
+        margin: 0 auto;
+        width: 100vw;
+        height: 320px;
+        overflow: hidden;
+        margin-top: 118px;
+    }
+    .slides{
+        width: 400%;
+        height: 320px;
+        display: flex;
+    }
+    .slides input{
+        display: none;
+    }
+    .slide img{
+        width: 100vw;
+        border-radius: 0;
+    }
+    .manual-navigation{
+        display: none;
+    }
+    .manual-btn{
+        cursor: none;
+    }
+    .navigation-auto div{
+        display: none;
+    }
+    .navigation-auto{
+        width: 100vw;
+        margin-top: 24%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 550px){
+    .navigation-auto{
+        display: none;
+    }
+}
+.botoes{
+    text-align: center;
+    margin-top: 60px;
+}
+.btnloja{
+    width: 300px;
+    height: 121px;
+    background: #F4F4F4;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-bottom: 8px solid #7227A0;
+    position: absolute;
+    left: 20%;
+    transition: 0.5s;
+}
+.btnloja:hover{
+    box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.25);
+}
+.btnloja img{
+    transition: 0.3s ease-in-out;
+}
+.btnloja:hover img{
+    transform: scale(1.03);
+}
+.Loja{
+    position: absolute;
+    width: 300px;
+    height: 121px;
+    border-radius: 5px;
+    left: 0;
+}
+.btnreparo{
+    width: 300px;
+    height: 121px;
+    background: #F4F4F4;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-bottom: 8px solid #7227A0;
+    position: absolute;
+    right: 20%;
+    transition: 0.5s;
+}
+.btnreparo:hover{
+    box-shadow: 4px 8px 8px 4px rgba(0, 0, 0, 0.25);
+}
+.btnreparo img{
+    transition: 0.3s ease-in-out;
+}
+.btnreparo:hover img{
+    transform: scale(1.03);
+}
+.Reparo{
+    position: absolute;
+    width: 300px;
+    height: 121px;
+    border-radius: 5px;
+    right: 0;
+}
+@media screen and (max-width: 1130px) {
+    .btnloja{
+        left: 10%;
+    }
+    .btnreparo{
+        right: 10%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .btnloja{
+        transform: scale(0.5);
+        left: 6%;
+        margin-top: -200px;
+    }
+    .btnreparo{
+        transform: scale(0.5);
+        right: 6%;
+        margin-top: -200px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .btnloja{
+        transform: scale(0.3);
+        left: 2%;
+        margin-top: -250px;
+    }
+    .btnreparo{
+        transform: scale(0.3);
+        right: 2%;
+        margin-top: -250px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .btnloja{
+        transform: scale(0.3);
+        left: -5%;
+        margin-top: -270px;
+    }
+    .btnreparo{
+        transform: scale(0.3);
+        right: -5%;
+        margin-top: -270px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .btnloja{
+        transform: scale(0.3);
+        left: -12%;
+        margin-top: -280px;
+    }
+    .btnreparo{
+        transform: scale(0.3);
+        right: -12%;
+        margin-top: -280px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .btnloja{
+        transform: scale(0.3);
+        left: -20%;
+        margin-top: -300px;
+    }
+    .btnreparo{
+        transform: scale(0.3);
+        right: -20%;
+        margin-top: -300px;
+    }
+}
+
+
+/*CARROSSEL*/
+.separador{
+    height: 200px;
+}
+.sliderProd{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.slideProd{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.separadorPror {
+    min-width: 1%;
+    background-color: red;
+}
+.cards{
+    display: flex;
+    width: 100%;
+    transition: 1s;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.cat{
+    color: #A739C0;
+    font-size: 2vw;
+    width: 100%;
+    margin-left: 50px;
+}
+.card{
+    margin: 30px 1.5%;
+}
+.fundo{
+    border-radius: 15px;
+    width: 11vw;
+    height: 50%;
+    border: 1px transparent solid;
+    cursor: pointer;
+}
+.fundo:hover{
+    transition: 0.5s ease;
+    border: 1px #000 solid;
+    .prodbtn{
+        opacity: 1;
+    }
+}
+.imgprod{
+    width: 11vw;
+    height: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.imgprod img{
+    width: auto;
+    height: auto;
+    max-height: 99%;
+    max-width: 99%;
+}
+.img-prod{
+    width: 160px;
+}
+.titu{
+    color: #000;
+    font-size: 1vw;
+    margin-left: 5px;
+    max-height: 60px;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.vend{
+    color: #000;
+    height: auto;
+    font-size: 0.75vw;
+    margin-left: 5px;
+    filter: opacity(0.6);
+}
+.avaliacao{
+    width: 6.5vw;
+    height: auto;
+}
+.avaliacao img{
+    width: 100%;
+    height: 100%;
+}
+.preco{
+    display: flex;
+}
+.moeda{
+    color: #30107A;
+    font-size: 0.8vw;
+    margin-left: 5px;
+    margin-top: 4%;
+}
+.valor{
+    color: #000;
+    font-size: 1.2vw;
+    margin-left: 3px;
+}
+.prodbtn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.prod-btn{
+    color: #fff;
+    font-size: 0.9vw;
+    background: #30107A;
+    border-radius: 25px;
+    width: 85%;
+    height: 2vw;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prod-btn:hover{
+    background-color: #7227A0;
+}
+.btnProd{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonsProd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #30107A;
+    gap: 5px;
+}
+.radios{
+    border: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radios:before{
+    content: '';
+    width: 9px;
+    height: 9px;
+    background-color: #7227A0;
+    border-radius: 50%;
+    transition: 300ms ease-in-out;
+    opacity: 0;
+}
+.radios:checked:before{
+    opacity: 1;
+}
+@media (max-width:1320px){
+    .buttonsProd{
+        transform: scale(0.8);
+    }
+    .separador{
+        height: 30px;
+    }
+}
+@media (max-width:1000px){
+    .cards{
+        overflow: auto;
+    }
+    .btnProd{
+        display: none;
+    }
+    .fundo{
+        border-radius: 8px;
+    }
+}
+@media (max-width:750px){
+    .separador{
+        display: none;
+    }
+    .sliderProd{
+        position: relative;
+        top: -60px;
+    }
+    .cat{
+        font-size: 3.5vw;
+    }
+    .fundo{
+        width: auto;
+    }
+    .imgprod{
+        width: 18vw;
+        height: 18vw;
+    }
+    .card {
+      width: 18vw;
+    }
+    .titu{
+        font-size: 2vw;
+        height: 30px;
+    }
+    .vend{
+        font-size: 1.25vw;
+    }
+    .avaliacao{
+        width: 10vw;
+    }
+    .moeda{
+        font-size: 1.8vw;
+    }
+    .valor{
+        font-size: 2.2vw;
+    }
+    .prod-btn{
+        font-size: 1.9vw;
+        height: 3.5vw;
+    }
+}
+@media (max-width:500px){
+    .sliderProd{
+        top: -120px;
+    }
+    .cat{
+        font-size: 4.5vw;
+        margin-left: 20px;
+    }
+    .imgprod{
+        width: 22vw;
+        height: 22vw;
+    }
+    .card {
+      width: 22vw;
+    }
+    .titu{
+        font-size: 3vw;
+        height: 20px;
+    }
+    .vend{
+        font-size: 2.25vw;
+    }
+    .avaliacao{
+        width: 15vw;
+    }
+    .moeda{
+        font-size: 2.8vw;
+    }
+    .valor{
+        font-size: 3.2vw;
+    }
+    .prod-btn{
+        font-size: 2.5vw;
+        height: 5vw;
+    }
+    .rodape{
+        transform: translateY(-140px);
+    }
+    .cards{
+        justify-content: left;
+    }
+}

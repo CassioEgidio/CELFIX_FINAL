@@ -1,0 +1,283 @@
+.nav-cat {
+    display: none;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 180px 120px 0 120px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.txt_field {
+    position: relative;
+    width: 40%;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 22px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.txt_field input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #000;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(270deg, #30107A 0.05%, #A739C0 99.96%);
+    transition: width 0.5s ease;
+    z-index: 2;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -10px;
+    color: #A739C0;
+    font-size: 18px;
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+    width: 100%;
+}
+
+.nota-fiscal, .garantia {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.nota-fiscal-label {
+    color: #adadad;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio {
+    display: none;
+}
+
+.item {
+    cursor: pointer;
+    color: #8E918F;
+    font-size: 20px;
+    position: relative;
+    margin-left: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.separator {
+    margin: 0 10px;
+    color: #8E918F;
+    font-size: 20px;
+}
+
+.item:hover {
+    color: #30107A;
+}
+
+.item.active {
+    color: #30107A;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #adadad;
+    padding: 10px; 
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox-custom {
+    min-width: 20px;
+    min-height: 20px;
+    border: 2px solid #30107A;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-right: 10px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.checkbox:checked + .checkbox-custom {
+    background-color: #30107A;
+}
+
+.checkbox:checked + .checkbox-custom::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 3px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.informacao-negacao {
+    font-size: 14px; 
+    color: #30107A; 
+    text-decoration: underline; 
+    text-align: center;
+}
+
+.checkbox-group + .checkbox-group {
+    margin-top: -15px;
+}
+
+.meio{
+    margin: 4px auto;
+}
+
+.avanc {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.avanc input[type="submit"] {
+    width: 233px;
+    height: 54px;
+    border-radius: 100px;
+    background: #30107A;
+    color: #fff;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.avanc input[type="submit"]:hover {
+    background-color: #A739C0;
+}
+
+.avanc input[type="submit"]:disabled {
+    background-color: #cccccc; 
+    cursor: not-allowed;
+}
+
+/* Responsividade */
+
+@media (max-width: 1000px) {
+    .formulario {
+        width: 100%;
+    }
+    .form-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .seg1 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .checkbox-label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 630px) {
+    .formulario {
+        padding: 160px 0 25px 0;
+    }
+    .nota-fiscal {
+        font-size: 14px;
+    }
+    .garantia {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .txt_field label {
+        font-size: 16px;
+    }
+    .txt_field input {
+        font-size: 14px;
+    }
+    .nota-fiscal-label, .item {
+        font-size: 14px;
+    }
+    .avanc input[type="submit"] {
+        width: 180px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 325px) {
+    .checkbox-label {
+        font-size: 12px;
+    }
+    .informacao-negacao {
+        font-size: 12px;
+    }
+}

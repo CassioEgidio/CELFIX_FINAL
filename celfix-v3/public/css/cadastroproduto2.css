@@ -1,0 +1,276 @@
+.nav-cat {
+    display: none;
+}
+.tudo {
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    flex:auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.esquerda {
+    display: flex;
+    flex:auto;
+    flex-direction: column;
+    width: 40%;
+}
+.direita {
+    display: flex;
+    width: 60%;
+}
+.parte1 {
+    display: flex;
+    flex:auto;
+    margin-right:20px;
+    flex-basis: 100%;
+    width: 50%;
+}
+.parte2 {
+    display: flex;
+    flex:auto;
+    flex-basis: 100%;
+    width: 40%;
+}
+
+/*estilo input*/
+.descricao{
+    flex:auto;
+}
+.envolta {
+    width: 450px;
+    margin-right:40px;
+    flex:auto;
+}
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0; /* Reduzi a margem para aproximar os campos */
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 35px; /* Diminuí a altura do input para reduzir o espaço */
+    font-size: 14px; /* Diminuí a fonte para um ajuste visual mais compacto */
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 40%; /* Ajuste no top para alinhar melhor o label */
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 14px; /* Fonte reduzida para o label */
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 35px; /* Ajuste a posição da linha inferior para alinhar com a nova altura do input */
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(270deg, #30107A 0.05%, #A739C0 99.96%);
+    transition: .5s;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -5px;
+    color: #A739C0;
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+    width: 100%;
+}
+
+/*estilo check*/
+.select-container {
+    position: relative;
+    margin: 15px 0; 
+}
+
+select {
+    width: 100%;
+    padding: 10px; 
+    border: 2px solid #adadad; 
+    border-radius: 5px; 
+    background: #fff;
+    color: #333; 
+    font-size: 16px; 
+    appearance: none; 
+    cursor: pointer;
+    transition: border-color 0.3s; 
+}
+select:focus {
+    border-color: #A739C0; 
+    outline: none; 
+}
+
+select:disabled {
+    background: #f0f0f0; 
+    cursor: not-allowed; 
+}
+
+.select-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px; 
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent; 
+    border-right: 5px solid transparent; 
+    border-top: 5px solid #333; 
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+/*estilo frete*/
+.fretetext {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.frete {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    color: #89938F;
+    gap: 20px;
+}
+.frete input {
+    display: none;
+}
+.frete label {
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s ease-in-out;
+}
+.dshdbfhbd {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+textarea {
+    width: 100%;
+    height: 320px;
+    padding: 10px;
+    border: 2px solid #adadad; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    background: #fff; 
+    color: #333; 
+    resize: none; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s; 
+    outline: none; 
+}
+
+/*botao*/
+.divbotao {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.botao {
+    border: none;
+    width: 220px;
+    height: 50px;
+    background: #30107A;
+    border-radius: 25px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.botao:hover {
+    color: #30107A;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 1px #24232396;
+}
+
+/*esquerda*/
+.tudoesquerda {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.clique {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px #000000 solid;
+    border-radius: 10px; 
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+}
+.clique img {
+    width: auto;      
+    height: auto;
+    max-height: 100%;
+}
+.restodacaixa {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.imgq {
+    width: 50px;
+}
+.pfot {
+    padding-bottom: 10px;
+}
+.pfo {
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width:1200px){
+    .tudo {
+        flex-direction: column; 
+        align-items: center;    
+      }
+    
+      .esquerda, .direita {
+        width: 90%;           
+        text-align: center;     
+    }
+    .botao{
+        margin-top:40px;
+    }
+}
+@media screen and (max-width:999px){
+    .tudo {
+        margin-top: 140px;
+      }
+    
+}
+@media screen and (max-width:470px){
+    .clique {
+        width: 150px;
+        height: 150px;
+    }
+    .clique2 {
+        width: 50px;
+        height: 50px;
+    }
+}

@@ -1,0 +1,35 @@
+body {
+    overflow: hidden;
+}
+
+.back-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 220px 50px 50px 50px;
+}
+#map {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border: 1px #30107A solid;
+    border-radius: 15px;
+}
+
+@media (max-width: 1000px) {
+    .back-main {
+        padding: 171px 50px 50px 50px;
+    }
+}
+@media (max-width: 520px) {
+    .back-main {
+        padding: 121px 0 0 0;
+    }
+    #map {
+        border-radius: 0;
+        border: none;
+    }
+}

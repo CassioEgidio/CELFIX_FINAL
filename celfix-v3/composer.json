@@ -1,0 +1,9 @@
+{
+    "name": "gui/celfix-v3",
+    "description": "celfix",
+    "type": "project",
+    "minimum-stability": "beta",
+    "require": {
+        "cboden/ratchet": "^0.4.4"
+    }
+}

@@ -1,0 +1,447 @@
+.nav-cat{
+    display: none;
+}
+
+.back-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 900px;
+    height: auto;
+    margin-top: 150px;
+}
+.status{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 0 50px;
+}
+.line{
+    width: 900px;
+    height: 4px;
+    background: #30107A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.separacao{
+    width: 60px;
+    height: 60px;
+    background-color: #30107A;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
+    span{
+        display: none;
+        position: absolute;
+        color: #30107A;
+        font-size: 20px;
+        margin-top: 85px;
+    }
+}
+.logistica{
+    width: 60px;
+    height: 60px;
+    background-color: #30107A;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
+    span{
+        display: none;
+        position: absolute;
+        color: #30107A;
+        font-size: 20px;
+        margin-top: 85px;
+    }
+}
+.rota{
+    width: 60px;
+    height: 60px;
+    background-color: #30107A;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
+    span{
+        display: none;
+        position: absolute;
+        color: #30107A;
+        font-size: 20px;
+        margin-top: 85px;
+    }
+}
+.entregue{
+    width: 60px;
+    height: 60px;
+    background-color: #30107A;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
+    span{
+        display: none;
+        position: absolute;
+        color: #30107A;
+        font-size: 20px;
+        margin-top: 85px;
+    }
+}
+.entregado{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    span{
+        font-size: 32px;
+        color: #00A323;
+    }
+}
+.cancelado{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    span{
+        font-size: 32px;
+        color: red;
+    }
+}
+
+.estagio1{
+    .line{
+        background: linear-gradient(90deg, #30107A 4%, #8E918F 31%, #8E918F 37%, #8E918F 64%, #8E918F 70%, #8E918F 97%);
+
+        .separacao{
+            background: #30107A;
+            span{
+                display: flex;
+            }
+        }
+        .logistica{
+            background: #89938F;
+        }
+        .rota{
+            background: #89938F;
+        }
+        .entregue{
+            background: #89938F;
+        }
+    }
+}
+.estagio2{
+    .line{
+        background: linear-gradient(90deg, #00A323 4%, #30107A 31%, #30107A 37%, #8E918F 60%, #8E918F 65%, #8E918F 97%);
+
+        .separacao{
+            background: #00A323;
+        }
+        .logistica{
+            background: #30107A;
+            span{
+                display: flex;
+            }
+        }
+        .rota{
+            background: #89938F;
+        }
+        .entregue{
+            background: #89938F;
+        }
+    }
+}
+.estagio3{
+    .line{
+        background: linear-gradient(90deg, #00A323 4%, #00A323 31%, #00A323 37%, #30107A 64%, #30107A 70%, #8E918F 97%);
+
+        .separacao{
+            background: #00A323;
+        }
+        .logistica{
+            background: #00A323;
+        }
+        .rota{
+            background: #30107A;
+            span{
+                display: flex;
+            }
+        }
+        .entregue{
+            background: #89938F;
+        }
+    }
+}
+.estagio4{
+    .line{
+        display: none;
+    }
+    .entregado{
+        display: flex;
+    }
+    height: 300px;
+}
+.estagio5{
+    .line{
+        display: none;
+    }
+    .cancelado{
+        display: flex;
+    }
+    height: 300px;
+}
+.infos{
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgProd{
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    border: #000 1px solid;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+.detalhes{
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+
+    span{
+        color: #000;
+        font-size: 28px;
+        
+        span{
+            color: #30107A;
+            font-size: 24px;
+        }
+    }
+}
+.detalhamentos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    gap: 35px;
+}
+.left{
+    width: auto;
+    height: auto;
+}
+.right{
+    width: auto;
+    height: auto;
+}
+.divisoria{
+    width: 1px;
+    height: 360px;
+    background-color: #000;
+    margin: 0 80px;
+}
+
+.cancelar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+
+    input {
+        border: none;
+        width: 400px;
+        height: 40px;
+        background: red;
+        border-radius: 25px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    input:hover {
+        color: red;
+        background-color: #fff;
+        box-shadow: 0px 0px 5px 1px #24232396;
+    }
+}
+
+.confirmar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+
+    input {
+        border: none;
+        width: 400px;
+        height: 40px;
+        background: #00A323;
+        border-radius: 25px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    input:hover {
+        color: #00A323;
+        background-color: #fff;
+        box-shadow: 0px 0px 5px 1px #24232396;
+    }
+}
+
+@media (max-width: 1300px) {
+    .infos{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .divisoria {
+        display: none;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .divisoria {
+        display: flex;
+        height: 1px;
+        width: 80%;
+        margin: 0 0 0 0;
+    }
+}
+
+@media (max-width: 615px) {
+    .infos{
+        flex-direction: column;
+    }
+    .detalhes {
+        margin-left: 0;
+
+        span {
+            text-align: center;
+        }
+
+        .detalhamentos {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .back-main {
+        margin-top: 180px;
+    }
+    .cancelar {
+        form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        input {
+            width: 80%;
+        }
+    }
+    
+    .confirmar {
+        form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        input {
+            width: 80%;
+        }
+    }
+
+    .status {
+        height: auto;
+    }
+
+    .estagio1, .estagio2, .estagio3 {
+        display: flex;
+        .line {
+            height: auto;
+            background: none;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 25px;
+
+            .separacao {
+                display: flex;
+                flex-direction: row;
+
+                span {
+                    width: 200px;
+                    margin-top: 0;
+                    margin-left: 300px;
+                }
+            }
+
+            .logistica {
+                display: flex;
+                flex-direction: row;
+
+                span {
+                    width: 200px;
+                    margin-top: 0;
+                    margin-left: 300px;
+                }
+            }
+
+            .rota {
+                display: flex;
+                flex-direction: row;
+
+                span {
+                    width: 200px;
+                    margin-top: 0;
+                    margin-left: 300px;
+                }
+            }
+        }
+    }
+    .estagio4 {
+        .line {
+            display: none;
+        }
+    }
+}
